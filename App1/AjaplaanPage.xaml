@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Ajaplaan.AjaplaanPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="Aqua" Padding="4" CornerRadius="0">
+                <Label x:Name="LabelInfo" Text="" FontSize="30" HorizontalOptions="Center"/>
+            </Frame>
+
+            <StackLayout Orientation="Vertical">
+                <TimePicker x:Name="_timePicker" Time="07:30:00" Format="T" HorizontalOptions="Center" PropertyChanged="_timePicker_PropertyChanged"/>
+                <Image x:Name="imageforpicker" Source="" WidthRequest="300"/>
+            </StackLayout>
+
+            <StackLayout
+                Orientation="Horizontal"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="End">
+
+                <Button x:Name="ButtonTagasi"
+                        Text="Tagasi"
+                        FontSize="20"
+                        TextColor="Black"
+                        BackgroundColor="Aqua"
+                        Clicked="ButtonTagasi_Clicked"
+                        HorizontalOptions="CenterAndExpand"
+                        Margin="10">
+                </Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
